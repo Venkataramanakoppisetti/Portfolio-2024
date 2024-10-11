@@ -1,10 +1,14 @@
-import React from 'react'
-
+import React from 'react';
+import PageHeader from '../../Components/PageHeader';
+import { FaFilePdf } from "react-icons/fa6";
 const Resume = () => {
   return (
-    <div>
-      This is Resume
-    </div>
+    <section className="resume-container" id='resume'>
+    <PageHeader 
+      headerText = "My Resume"
+      icon = {<FaFilePdf size={40}/>}
+    />
+  </section>
   )
 }
 

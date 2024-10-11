@@ -1,4 +1,4 @@
-import {Routes,Route} from 'react-router-dom'; 
+import {Routes,Route, useLocation} from 'react-router-dom'; 
 import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 import Home from './Pages/Home';
@@ -8,6 +8,7 @@ import Portfolio from './Pages/Portfolio';
 import Resume from './Pages/Resume';
 import Skills from './Pages/Skills';
 import Navbar from './Components/Navbar';
+import './App.css';
 
 function App() {
 
@@ -52,20 +53,31 @@ function App() {
     },
     "detectRetina": true
   };  
+
+  const location = useLocation();
+
+  const renderParticleAnimation = location.pathname === "/";
   
   return (
-    <>
-      <Particles id="tsparticles" init={particlesInit} options={particlesOptions} />
+    <div className="app">
+      {
+        renderParticleAnimation && <Particles id="tsparticles" init={particlesInit} options={particlesOptions} />
+      }
+      
       <Navbar />
-      <Routes>
-        <Route index path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/skills" element={<Skills />} />
-      </Routes>
-    </>
+      <div className="main-container">
+        <Routes>
+          <Route index path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/skills" element={<Skills />} />
+        </Routes>
+      </div>
+      
+    </div>
+      
   );
 }
 

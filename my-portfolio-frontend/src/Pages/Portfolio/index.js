@@ -1,10 +1,16 @@
-import React from 'react'
+import React from 'react';
+import PageHeader from '../../Components/PageHeader';
+import { FaFilePdf } from "react-icons/fa6";
+
 
 const Portfolio = () => {
   return (
-    <div>
-      This is Portfolio
-    </div>
+    <section className="portfolio-container" id='portfolio'>
+    <PageHeader 
+      headerText = "My Portfolio"
+      icon = {<FaFilePdf size={40}/>}
+    />
+  </section>
   )
 }
 

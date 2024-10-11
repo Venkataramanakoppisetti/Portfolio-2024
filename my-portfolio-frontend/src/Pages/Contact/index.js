@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import PageHeader from '../../Components/PageHeader';
+import { RiContactsFill } from "react-icons/ri";
 
 const Contact = () => {
   return (
-    <div>
-      This is Contact
-    </div>
+    <section className="contact-container" id='contact'>
+      <PageHeader 
+        headerText = "Contact Me"
+        icon = {<RiContactsFill size={40}/>}
+      />
+    </section>
   )
 }
 
