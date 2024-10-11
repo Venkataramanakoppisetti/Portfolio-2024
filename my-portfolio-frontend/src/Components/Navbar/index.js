@@ -19,8 +19,8 @@ const Navbar = () => {
             id: 2
         },
         {
-            route: "CONTACT",
-            to: "/contact",
+            route: "SKILLS",
+            to: "/skills",
             id: 3
         },
         {
@@ -34,10 +34,11 @@ const Navbar = () => {
             id: 5
         },
         {
-            route: "SKILLS",
-            to: "/skills",
-            id: 6
-        } 
+            route: "CONTACT",
+            to: "/contact",
+            id: 4
+        }
+        
     ]
 
     const [toggleIcon, setToggleIcon] = useState(false);
