@@ -76,3 +76,12 @@
         color: black;
     }
 }
+
+@media screen and (max-width:768px) {
+    .contact-me-button {
+        width: 100px;
+        height: 50px;
+        font-size: 1.5rem;
+        padding: 0;
+    }
+}

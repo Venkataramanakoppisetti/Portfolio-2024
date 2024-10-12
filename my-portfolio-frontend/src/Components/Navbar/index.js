@@ -1,7 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CgProfile } from "react-icons/cg";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 import './index.css'
@@ -24,19 +23,19 @@ const Navbar = () => {
             id: 3
         },
         {
-            route: "PORTFOLIO",
-            to: "/portfolio",
+            route: "RESUME",
+            to: "/resume",
             id: 4
         },
         {
-            route: "RESUME",
-            to: "/resume",
+            route: "PORTFOLIO",
+            to: "/portfolio",
             id: 5
         },
         {
             route: "CONTACT",
             to: "/contact",
-            id: 4
+            id: 6
         }
         
     ]
@@ -52,7 +51,7 @@ const Navbar = () => {
       <nav className="navbar">
         <div className="navbar-container">
             <Link to={'/'} className='navbar-container-logo'>
-                <CgProfile size={30} />
+                <img src="https://res.cloudinary.com/dyhrvktyr/image/upload/v1690866029/IMG_20210818_205126_cvxtmh.jpg" alt="profile" className="profile" />
             </Link>
         </div>
         <ul className={`nav-elements ${toggleIcon ? 'active' : ''}`}>

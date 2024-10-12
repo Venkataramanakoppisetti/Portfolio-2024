@@ -1,0 +1,187 @@
+.resume-container {
+    height: 100%;
+}
+
+.resume-wrapper-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+
+}
+
+.experience-container{
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-container {
+    width: 50%;
+    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience {
+    display: inline-block;
+    color: var(--yellow-theme-subtext-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: capitalize;
+    padding: 5px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.experience::before, .experience::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+
+.experience::before {
+    left: 0;
+
+}
+
+.experience::after {
+    right: 0;
+}
+
+.education {
+    display: inline-block;
+    color: var(--yellow-theme-subtext-color);
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1rem;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-transform: capitalize;
+    padding: 5px;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
+}
+
+.education::before, .education::after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 5px;
+    background-color: var(--yellow-theme-main-color);
+    bottom: -1px;
+}
+
+.education::before {
+    left: 0;
+
+}
+
+.education::after {
+    right: 0;
+}
+
+.vertical-timeline {
+    padding: 0px 0px 30px 0px;
+
+    &:last-child {
+        padding-bottom: 0px;
+    }
+}
+
+.experience-content-wrapper {
+    display: flex;
+    align-items: center;
+
+    h3 , h4 {
+        font-size: 22px;
+
+    }
+
+    h4 {
+        margin-left: 8px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+}
+
+.area-experience {
+    font-size: 18px !important;
+}
+
+.education-content-wrapper {
+    display: flex;
+    align-items: center;
+
+    h3 , h4 {
+        font-size: 22px;
+
+    }
+
+    h4 {
+        margin-left: 8px;
+    }
+}
+
+.course-passout {
+    font-size: 18px !important;
+}
+
+.vertical-timeline {
+    box-shadow: none;
+}
+
+@media screen and (max-width:768px) {
+    .resume-container .resume-wrapper-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-container {
+        width: 100%;
+    }
+
+    .education-container {
+        width: 100%;
+    }
+
+}
+
+
+/* Container for the download button */
+.download-resume-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.download-resume-button {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    color: var(--yellow-theme-main-color);
+    background-color: #181818;
+    border: 1.5px solid var(--yellow-theme-main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin: 10px;
+}
+
+.download-resume-button:hover {
+    background-color: var(--yellow-theme-main-color);
+    color: #181818;
+}
+
+.bars {
+    margin-left: 5px;
+}
