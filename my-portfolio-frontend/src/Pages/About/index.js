@@ -69,16 +69,44 @@ const About = () => {
               </p>
           </Animate>
           <Animate 
-          play 
-          duration={1.5} 
-          delay={1} 
-          start={{
-            transform: 'translateX(-500px)'
-          }} 
+            play 
+            duration={1.5} 
+            delay={1} 
+            start={{
+              transform: 'translateX(-900px)'
+            }} 
 
-          end={{
-            transform: 'translateX(0px)'
-          }}>
+            end={{
+              transform: 'translateX(0px)'
+            }}>
+              <h3 className='about-heading'>Experience - NxtWave (Ex - Technical Support Enginner)</h3>
+              <p className='about-summary'>
+                Configured and managed software and hardware systems to ensure optimal performance.
+                Addressed and resolved production issues, minimizing downtime and ensuring business
+                continuity.
+                Developed technical content for internal and external use, enhancing knowledge sharing
+                and customer support.
+                Automated routine tasks through script writing, improving efficiency and reducing manual
+                effort.
+                Managed and maintained AWS repositories, ensuring version control and
+                smooth deployment processes.
+                Regularly committed code updates and improvements to the project repositories.
+                Utilized Amazon S3 for storing and retrieving data, ensuring secure and efficient data
+                management.
+              </p>
+          </Animate>
+          <Animate 
+            play 
+            duration={1.5} 
+            delay={1} 
+            start={{
+              transform: 'translateX(-500px)'
+            }} 
+
+            end={{
+              transform: 'translateX(0px)'
+            }}
+          >
             <h3 className='about-personal-heading'>Personal Details</h3>
             <ul className='personal-details'>
               {
