@@ -1,0 +1,113 @@
+/* Contact Section Styling */
+.contact-section {
+    background-color: #000000;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #e6c936;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    font-size: 2rem;
+    color: #e6c936;
+    margin-bottom: 30px;
+  }
+  
+  /* Contact Buttons */
+  .contact-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  
+  .contact-button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .email-button {
+    background-color: #007bff;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3);
+  }
+  
+  .email-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .whatsapp-button {
+    background-color: #25d366;
+    color: white;
+    box-shadow: 0 4px 6px rgba(37, 211, 102, 0.3);
+  }
+  
+  .whatsapp-button:hover {
+    background-color: #1da851;
+  }
+  
+  /* Contact Form */
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background: rgb(36, 193, 214);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form label {
+    font-weight: bold;
+    color: #444;
+    display: block;
+    margin-top: 15px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    font-size: ;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    width: 50%;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
+  
